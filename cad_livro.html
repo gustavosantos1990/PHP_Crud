@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro de Livro</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="lib\jquery\jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="lib\js\bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib\estilo.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h3>Cadastro de Livro</h3>
+		<br/>
+		<form method="get" action="">
+			<label for="isbn">ISBN</label>
+			<input id="isbn" class="form-control" type="text" name="txtisbn" required="true">
+
+			<label for="nome">Nome</label>
+			<input id="nome" class="form-control" type="text" name="txtnome" required="true">
+
+			<label>Categoria</label><br/>
+			<select required="true">
+				<option value=""> - Selecione uma Categoria - </option>
+				<option value="romance">Romance</option>
+				<option value="suspense">Suspense</option>
+				<option value="aventura">Aventura</option>
+			</select><br/>
+
+			<label>Autor</label><br/>
+			<select required="true">
+				<option value=""> - Selecione um Ator - </option>
+				<option value="">Aghata Christie</option>
+				<option value="">Sidney Sheldon</option>
+				<option value="">Eça de Queiroz</option>
+				<option value="">Machado de Assis</option>
+				<option value="">Monteiro Lobato</option>
+				<option value="">Ivan Jaff</option>
+			</select>
+			<hr/>
+			<input class="btn btn-primary" type="submit" name="enviar">
+		</form>
+	</div>
+</body>
+</html>

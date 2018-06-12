@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro de Autor</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="lib\jquery\jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="lib\js\bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib\estilo.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h3>Cadastro de Autor</h3>
+		<br/>
+		<form method="post" action="">
+			<label for="nome">Nome</label>
+			<input id="nome" class="form-control" type="text" name="txtnome" required="true">
+
+			<label for="cpf">CPF</label>
+			<input id="cpf" class="form-control" type="text" name="txtcpf" required="true">
+
+			<label for="datanascimento">Data de Nascimento</label>
+			<input id="datanascimento" class="form-control" type="date" name="txtdatanascimento" required="true">
+
+			<label >Sexo</label><br/>
+			<input type="radio" name="sexo" value="masculino">Masculino<br/>
+			<input type="radio" name="sexo" value="feminino">Feminino
+			<hr/>
+			<input class="btn btn-primary" type="submit" name="enviar">
+		</form>
+	</div>
+</body>
+</html>
