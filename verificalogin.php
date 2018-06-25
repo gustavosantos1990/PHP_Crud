@@ -1,26 +1,26 @@
 <?php
-	//verificalogin.php
-require_once("conexao.php");
+require_once("connection.php");
 $usuario = $_POST['txtusuario'];
 $senha = $_POST['txtsenha'];
+//echo "<script>console.log('Usuario: $usuario Senha: $senha');</script>";
 
-$sql = "SELECT * FROM tb_usuario WHERE ds_usuario = '$usuario' AND ds_Senha = '$senha'";
+$sql = "SELECT * FROM users WHERE user = '$usuario' AND password = '$senha'";
 
 $result = mysqli_query($conn,$sql);
 
 if ($result){
 	$dados = mysqli_fetch_array($result);
 
-	$nomeusu = $dados["nm_usuario"];
+	$username = $dados["name"];
 	session_start();
 
-	$_SESSION['nomeusu'] = $nomeusu;
+	$_SESSION['username'] = $username;
 	$_SESSION['logado'] = true;
 	$result->close();
-	header('Location:painel.php');
+	header('Location:home.php');
 }else{
 	header('Location:index.php');
-	alert('Usuário ou senha não encontrados!');
+	echo "<script>alert('Usuário ou senha não encontrados!');</script>";
 }
 
 ?>

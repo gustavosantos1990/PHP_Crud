@@ -19,3 +19,8 @@ button a{
 	text-decoration: none;
 	color: white;
 }
+
+.main-card{
+	width: 300px;
+	margin: 50px;
+}

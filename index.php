@@ -19,7 +19,7 @@
 		</div>
 
 		<form action="verificalogin.php" method="POST" class="form_login">
-			<input type="email" name="txtusuario" placeholder="Digite aqui seu email" required="true">
+			<input type="text" name="txtusuario" placeholder="Digite aqui seu email" required="true">
 			<input type="password" name="txtsenha" placeholder="Digite aqui sua senha" required="true">
 			<button >Acessar</button>
 			<a class="senha" href="">Recuperar senha?</a>
