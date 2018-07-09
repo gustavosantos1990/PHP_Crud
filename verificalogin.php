@@ -20,7 +20,7 @@ if ($result){
 	header('Location:home.php');
 }else{
 	header('Location:index.php');
-	echo "<script>alert('Usuário ou senha não encontrados!');</script>";
+	//echo "<script>alert('Usuário ou senha não encontrados!');</script>";
 }
 
 ?>
